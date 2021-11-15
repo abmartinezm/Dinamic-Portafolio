@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Dinamico</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <!-- CUSTOM CSS -->
+    <script src="https://kit.fontawesome.com/7461cf9184.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    
+    <div class="contenedor">
+        <header>
+            <div class="logo">
+                <h1>Abraham Martinez Marquez</h1>
+                <p>Desarrollador Web</p>
+            </div>
+            <form action="">
+                <input   placeholder="buscar" type="text" class="barra-busqueda" id="barra-busqueda">
+            </form>
+            <div class="categorias" id="categorias">
+                <a href="#" class="activo">Todos</a>
+                <a href="#" class="activo">Naturaleza</a>
+                <a href="#" class="activo">Animales</a>
+                <a href="#" class="activo">Paisajes</a>
+                <a href="#" class="activo">Ciudades</a>
+            </div>
+        </header>
+
+
+        <section class="grid" id="grid">
+            <div class="item"  
+            data-categoria="ciudades" 
+            data-etiquetas="ciudades autos carros calles"
+            data-descripcion="Lorem ipsum dolor sit amet consectetur.">
+                <div class="item-contenido">
+                    <img src="img/ciudad1.png" alt="">
+                </div>
+            </div>
+
+            <div class="item"  
+            data-categoria="personas" 
+            data-etiquetas="cara mujer moda cabello"
+            data-descripcion="Lorem ipsum dolor sit amet consectetur.">
+                <div class="item-contenido">
+                    <img src="img/persona1.png" alt="">
+                </div>
+            </div>
+
+
+            <div class="item"  
+            data-categoria="paisajes" 
+            data-etiquetas="montaña niebla barranco vacio mar"
+            data-descripcion="Lorem ipsum dolor sit amet consectetur.">
+                <div class="item-contenido">
+                    <img src="img/paisaje1.png" alt="">
+                </div>
+            </div>
+
+            <div class="item"  
+            data-categoria="animales" 
+            data-etiquetas="leon animal depredador"
+            data-descripcion="Lorem ipsum dolor sit amet consectetur.">
+                <div class="item-contenido">
+                    <img src="img/animal1.png" alt="">
+                </div>
+            </div>
+
+            <div class="item"  
+            data-categoria="naturaleza" 
+            data-etiquetas="hojas verde arboles"
+            data-descripcion="Lorem ipsum dolor sit amet consectetur.">
+                <div class="item-contenido">
+                    <img src="img/naturaleza1.png" alt="">
+                </div>
+            </div>
+
+            <div class="item"  
+            data-categoria="ciudades" 
+            data-etiquetas="edificios mar nubes autos"
+            data-descripcion="Lorem ipsum dolor sit amet consectetur.">
+                <div class="item-contenido">
+                    <img src="img/ciudad2.png" alt="">
+                </div>
+            </div>
+
+            <div class="item"  
+            data-categoria="personas" 
+            data-etiquetas="cara mujer moda cabello tatuaje"
+            data-descripcion="Lorem ipsum dolor sit amet consectetur.">
+                <div class="item-contenido">
+                    <img src="img/persona2.png" alt="">
+                </div>
+            </div>
+
+            <div class="item"  
+            data-categoria="paisajes" 
+            data-etiquetas="montaña niebla barranco vacio"
+            data-descripcion="Lorem ipsum dolor sit amet consectetur.">
+                <div class="item-contenido">
+                    <img src="img/paisaje2.png" alt="">
+                </div>
+            </div>
+
+            <div class="item"  
+            data-categoria="animales" 
+            data-etiquetas="animal panda arbol "
+            data-descripcion="Lorem ipsum dolor sit amet consectetur.">
+                <div class="item-contenido">
+                    <img src="img/animal2.png" alt="">
+                </div>
+            </div>
+
+        </section>
+
+        <section class="overlay" id="overlay">
+            <div class="contenedor-img">
+                <button><i class="fas fa-times" id="btn-cerrar-popup"></i></button>
+                <img src="" alt="" >
+            </div>
+            <p class="descripcion">
+                
+            </p>
+        </section>
+
+        
+		<footer class="contenedor">
+			<div class="redes-sociales">
+				<div class="contenedor-icono">
+					<a href="http://www.twitter.com/falconmasters" target="_blank" class="twitter">
+						<i class="fab fa-twitter"></i>
+					</a>
+				</div>
+				<div class="contenedor-icono">
+					<a href="http://www.facebook.com/falconmasters" target="_blank" class="facebook">
+						<i class="fab fa-facebook-f"></i>
+					</a>
+				</div>
+				<div class="contenedor-icono">
+					<a href="http://www.instagram.com" target="_blank" class="instagram">
+						<i class="fab fa-instagram"></i>
+					</a>
+				</div>
+			</div>
+			<div class="creado-por">
+				<p>Sitio diseñado por <a href="#">Abraham Martinez Marquez </a></p>
+			</div>
+		</footer>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.5/dist/muuri.min.js"></script>
+
+    <script src="main.js"></script>
+</body>
+</html>
